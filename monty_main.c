@@ -2,9 +2,10 @@
 #include <stdio.h>
 #define _GNU_SOURCE
 #include <stdlib.h>
+#include <string.h>
 
 bus_t bus = {NULL, NULL, NULL, 0};
-
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 /**
 * main - function for monty code interpreter
 * @argc: argument count
